@@ -1,0 +1,5 @@
+# Remove do rastreamento (não apaga localmente)
+git rm -r --cached node_modules
+echo "node_modules/" >> .gitignore
+git add .gitignore
+git commit -m "fix: remover node_modules do git"
