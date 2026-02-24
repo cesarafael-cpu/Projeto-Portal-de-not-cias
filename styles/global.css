@@ -38,3 +38,18 @@ a:hover {
 h1, h2, h3 {
   font: inherit;
 }
+
+.container {
+  max-width: 1120px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+/* utility-first */
+.grid {
+  display: grid;
+}
+
+.grid {
+  grid-auto-flow: column;
+}
