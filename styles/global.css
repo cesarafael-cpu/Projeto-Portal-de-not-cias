@@ -39,6 +39,10 @@ h1, h2, h3 {
   font: inherit;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   max-width: 1120px;
   margin-inline: auto;
@@ -50,6 +54,23 @@ h1, h2, h3 {
   display: grid;
 }
 
-.grid {
+.grid-flow-col {
   grid-auto-flow: column;
+}
+
+main {
+  margin-top: 40px;
+}
+
+.content-tag {
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: var(--brand-color-dark);
+  /* color: var(--text-color-secondary); */
+  font: 500 10px/1.2 var(--font-family);
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-color-primary);
+  box-shadow: 10px 0px rgba(2, 6, 23, 0.25)
 }
