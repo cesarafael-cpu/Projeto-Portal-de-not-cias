@@ -12,27 +12,28 @@
   --text-color-primary: #C4C4CC;
   --text-color-secondary: #CBD5E1;
 
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
+  --font-family: "Archivo", sans-serif;
+  --h1: 800 24px/135% var(--font-family);
+  --h2: 800 16px/140% var(--font-family);
+  --h3: 800 14px/140% var(--font-family);
+  --text-span: 600 14px/145% var(--font-family);
+  --text-paragraph: 400 14px/160% var(--font-family);
 }
 
 body {
   color: var(--text-color-primary);
   background-color: var(--bg-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--brand-color-light);
+}
+
+h1, h2, h3 {
+  font: inherit;
 }
