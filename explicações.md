@@ -137,3 +137,24 @@ div { display: flex; align-items: center; }
 div = É como uma caixa invisível que contém coisas
 display: flex = É como se você dissesse: "Quero que as coisas dentro dessa caixa fiquem em linha, como soldadinhos em fila"
 align-items: center = Significa "coloca tudo no meio" - tipo quando você quer que todos os seus amigos fiquem na mesma altura, nem um em cima nem embaixo
+
+- 1. O que é #featured?
+É um "ID" no CSS. Pense nele como um nome especial para uma caixa no site. Só uma coisa no site pode ter esse nome. É como dar um apelido único para o seu brinquedo favorito.
+Tudo dentro das chaves {} depois de #featured são regras só para essa caixa.
+2. img { height: 100%; object-fit: cover; }
+img é a imagem dentro da caixa #featured. É como uma foto que você cola no quadro.
+height: 100%; significa que a altura da imagem vai ocupar 100% da altura da caixa. Se a caixa é alta como uma porta, a imagem cresce para caber toda a altura.
+object-fit: cover; é uma mágica para a imagem. Se a imagem for maior ou menor que a caixa, ela "corta" as partes extras para caber perfeitamente, sem deformar. É como cortar uma foto para encaixar em um porta-retratos sem deixar buracos.
+3. .card { ... }
+.card é uma classe (tipo um grupo de coisas parecidas). É como um cartão de visita ou um cartão de jogo que fica em cima da imagem.
+border-radius: 4px; arredonda os cantos do cartão, como fazer um quadrado virar um retângulo com cantinhos suaves. 4px é um pouquinho, tipo o tamanho de uma borracha pequena.
+overflow: hidden; esconde qualquer coisa que saia para fora do cartão. É como cortar as bordas de um papel para não sair da mesa.
+position: relative; diz que o cartão pode se mover um pouco em relação ao resto da página. É como posicionar um boneco em um cenário.
+4. &::before { ... }
+&::before é um truque para adicionar algo invisível antes do cartão. É como colocar um vidro transparente em cima da imagem.
+content: ""; cria esse vidro vazio (sem texto).
+position: absolute; faz ele flutuar em cima, como uma camada extra.
+inset: 0; cobre toda a área do cartão, como uma folha de papel em cima de outro.
+top: 50%; começa no meio da altura (50% para cima).
+background: linear-gradient(...); pinta um fundo que vai de transparente (invisível) no topo para uma cor escura (#020617, tipo azul-escuro) embaixo. É como um filtro que escurece a parte de baixo da imagem, para que o texto fique legível.
+No geral: Esse código faz a imagem de destaque ficar bonita e coberta por um cartão com cantos arredondados e um efeito de sombra escura embaixo. É para tornar a notícia principal mais atraente, como uma capa de revista!
