@@ -158,3 +158,13 @@ inset: 0; cobre toda a área do cartão, como uma folha de papel em cima de outr
 top: 50%; começa no meio da altura (50% para cima).
 background: linear-gradient(...); pinta um fundo que vai de transparente (invisível) no topo para uma cor escura (#020617, tipo azul-escuro) embaixo. É como um filtro que escurece a parte de baixo da imagem, para que o texto fique legível.
 No geral: Esse código faz a imagem de destaque ficar bonita e coberta por um cartão com cantos arredondados e um efeito de sombra escura embaixo. É para tornar a notícia principal mais atraente, como uma capa de revista!
+
+- A REGRA ESPECIAL &:has(.text-lg)
+Isso é tipo uma regra com condição:
+
+& = "se for ESTE elemento..."
+:has(.text-lg) = "...E se TIVER dentro dele uma coisa chamada .text-lg..."
+padding: 12px; = "...então muda o espaço para 12 passinhos!" (menor que 24)
+Traduzindo em linguagem de criança:
+
+"Se o título for GRANDE, coloca menos espaço. Se for pequeno, coloca mais espaço." É como ajustar a roupa: se sua mochila é pesada, você ajusta o espaço.
